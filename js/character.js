@@ -74,5 +74,3 @@ function drawImage() {
 setInterval(function() {
   drawImage();
 }, 100);
-
-////////////////////////////BOUNDARIES////////////////////////////////////

@@ -31,7 +31,7 @@ function drawObstacle() {
 // startGame();
 // =============================================================
 
-function canMove(futureX, futureY) {
+function hitObstacle(futureX, futureY) {
   var canIMove = true;
   currentGame.forEach(function(key) {
     if (futureX >= key.x && futureX <= key.x + key.width && (futureY >= key.y && futureY <= key.y + key.height)) {
@@ -53,13 +53,14 @@ document.onkeydown = function(event) {
   // ctx.clearRect(x, y, width, height);
   switch (directionCode) {
     case 37:
-      if (canMove(x - 10, y)) {
+      if (hitObstacle(x - 10, y)) {
+        // single variable Truthy check
         moveLeft();
       }
       break;
 
     case 39:
-      if (canMove(x + 80, y)) {
+      if (hitObstacle(x + 80, y)) {
         moveRight();
       }
       break;

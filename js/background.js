@@ -37,7 +37,7 @@ function updateCanvas() {
   background.draw();
 
   window.requestAnimationFrame(updateCanvas);
-  drawObstacle(); // located in Obstacle.js
+  drawObstacle(); // ----------> Located in Obstacle.js
 }
 
 //backgroundImage.onload = updateCanvas;
