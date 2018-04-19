@@ -1,4 +1,4 @@
-var ufoCanWidth = 1500;
+var ufoCanWidth = 1280;
 var ufoCanHeight = 720;
 
 // var ufoCanWidth = (canvas.width = window.innerWidth);
@@ -9,8 +9,8 @@ canvasUfo.width = ufoCanWidth;
 canvasUfo.height = ufoCanHeight;
 var ctx3 = canvasUfo.getContext('2d');
 
-var ufoX = 1200;
-var ufoY = 30;
+var ufoX = 1000; // position on screen
+var ufoY = 30; // position on screen
 
 var ufoSrcX;
 var ufoSrcY;

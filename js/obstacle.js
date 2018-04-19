@@ -14,8 +14,8 @@ Obstacle.prototype.draw = function() {
 
 var currentGame = [];
 
-var leftWall = new Obstacle(0, 0, 30, 700);
-var rightWall = new Obstacle(470, 0, 30, 700);
+var leftWall = new Obstacle(0, 0, 30, 720);
+var rightWall = new Obstacle(1250, 0, 30, 720);
 
 currentGame.push(leftWall, rightWall);
 
@@ -59,7 +59,7 @@ document.onkeydown = function(event) {
       break;
 
     case 39:
-      if (canMove(x + 10, y)) {
+      if (canMove(x + 80, y)) {
         moveRight();
       }
       break;

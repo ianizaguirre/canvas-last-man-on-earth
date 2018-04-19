@@ -31,7 +31,7 @@ var background = {
 };
 
 function updateCanvas() {
-  background.move();
+  //background.move();
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   background.draw();
