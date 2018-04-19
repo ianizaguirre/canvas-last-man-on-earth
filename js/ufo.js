@@ -9,7 +9,9 @@ canvasUfo.width = ufoCanWidth;
 canvasUfo.height = ufoCanHeight;
 var ctx3 = canvasUfo.getContext('2d');
 
-var ufoX = 1000; // position on screen
+// var ufoMove = Math.floor(Math.random() * 1000);
+
+var ufoX = 200; // position on screen
 var ufoY = 30; // position on screen
 
 var ufoSrcX;

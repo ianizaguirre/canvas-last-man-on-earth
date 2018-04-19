@@ -22,17 +22,6 @@ function moveRight() {
   x += 10;
 }
 
-// document.onkeydown = function(e) {
-//   switch (e.keyCode) {
-//     case 37:
-//       moveLeft();
-//       break;
-//     case 39:
-//       moveRight();
-//       break;
-//   }
-// };
-
 var sheetWidth = 864;
 var sheetHeight = 280;
 
@@ -47,8 +36,8 @@ var right = true;
 var trackLeft = 1;
 var trackRight = 0;
 
-var width = sheetWidth / cols;
-var height = sheetHeight / rows;
+var width = sheetWidth / cols; // ------- Width of character
+var height = sheetHeight / rows; // ------- Height of character
 
 var currentFrame = 0;
 
