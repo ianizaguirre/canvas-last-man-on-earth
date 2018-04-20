@@ -60,7 +60,7 @@ document.onkeydown = function(event) {
       break;
 
     case 39:
-      if (hitObstacle(x + 80, y)) {
+      if (hitObstacle(x + 120, y)) {
         moveRight();
       }
       break;

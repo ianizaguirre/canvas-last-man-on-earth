@@ -6,7 +6,7 @@ canvasCharacter.width = canWidth;
 canvasCharacter.height = canHeight;
 var ctx2 = canvasCharacter.getContext('2d');
 
-var x = 220;
+var x = 30; // position of character on land
 var y = 500;
 
 var srcX;
@@ -14,12 +14,12 @@ var srcY;
 
 function moveLeft() {
   left = true;
-  x -= 10;
+  x -= 25; // speed of character
 }
 
 function moveRight() {
   left = false;
-  x += 10;
+  x += 25; // speed of character
 }
 
 var sheetWidth = 864;
@@ -46,7 +46,9 @@ character.src = './images/sprites/character.png';
 
 function updateFrame() {
   currentFrame = ++currentFrame % cols;
-  ctx2.clearRect(x - 20, y - 20, width + 100, height + 100);
+  //ctx2.clearRect(x - 20, y - 20, width + 100, height + 100);
+  ctx2.clearRect(x - 70, y - 20, width + 140, height + 100);
+
   srcX = currentFrame * width;
   if (left) {
     srcY = trackLeft * height;
